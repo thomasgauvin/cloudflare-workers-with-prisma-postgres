@@ -45,3 +45,7 @@ This project is a full sample based on Prisma's [sample project](https://github.
 8. Run `npm run dev` to run the project, and navigate to `http://localhost:8787` to see the results.
 9.  Run `npx wrangler secret put DATABASE_URL` to set up your DATABASE_URL secret in Cloudflare.
 10. Run `npm run deploy` to deploy the project. 
+
+## FAQ
+
+* **Is it possible to connect to Prisma Postgres using Cloudflare Hyperdrive?** No, Prisma Postgres does not provide direct connection to the underlying Postgres database. It must be accessed through Prisma Accelerate which provides authentication, connection pooling and caching over HTTP.
