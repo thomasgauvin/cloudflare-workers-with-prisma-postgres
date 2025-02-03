@@ -3,7 +3,7 @@
 You can build applications on Cloudflare Workers that connect to Prisma Postgres with a few configuration steps!
 This project is a full sample based on Prisma's [sample project](https://github.com/prisma/prisma-examples/tree/latest/databases/prisma-postgres).
 
-## Get this project running
+## Get this project running to connect from Cloudflare Workers to Prisma Postgres
 
 1. Run `npm install` to install project dependencies.
 2. Rename `.dev.vars.example` to `.dev.vars` and set your `DATABASE_URL` to the one provided in your Prisma Postgres instructions (this is required for local development using [Cloudflare Workers Secrets](https://developers.cloudflare.com/workers/configuration/secrets/)).
