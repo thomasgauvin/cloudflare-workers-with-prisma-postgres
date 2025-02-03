@@ -22,4 +22,8 @@ This project is a full sample based on Prisma's [sample project](https://github.
 5. Configure your database URL with Cloudflare Workers and Prisma. You need to override the datasourceUrl in the PrismaClient instantiation with the database url provided by Cloudflare environment variables. https://www.prisma.io/docs/orm/reference/prisma-client-reference#programmatically-override-a-datasource-url.
 4. Run `npm run dev` to run the project, and navigate to `http://localhost:8787` to see the results.
 5. Run `npx wrangler secret put DATABASE_URL` to set up your DATABASE_URL secret in Cloudflare.
-6. Run `npm run deploy` to deploy the project. 
+6. Run `npm run deploy` to deploy the project.
+
+## Troubleshooting
+
+* To connect to Prisma Postgres when developing locally using `wrangler dev`, you must disabled WARP.
