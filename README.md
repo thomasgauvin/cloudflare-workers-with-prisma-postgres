@@ -26,4 +26,4 @@ This project is a full sample based on Prisma's [sample project](https://github.
 
 ## Troubleshooting
 
-* To connect to Prisma Postgres when developing locally using `wrangler dev`, you must disabled WARP.
+* To connect to Prisma Postgres when developing locally using `wrangler dev`, you must disable [WARP](https://developers.cloudflare.com/cloudflare-one/connections/connect-devices/warp/).
