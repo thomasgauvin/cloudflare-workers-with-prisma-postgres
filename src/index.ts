@@ -8,8 +8,6 @@ interface Env {
 export default {
 	async fetch(request, env, ctx): Promise<Response> {
 		const connectionString = `${env.DATABASE_URL}`;
-		console.log(connectionString);
-
 		const prisma = new PrismaClient({
 			datasources: {
 				db: {
